@@ -1,6 +1,6 @@
 require 'minitest/autorun'
 require 'minitest/pride'
-require './lib/aardvark'
+require '/home/ninesky/turing/ruby-exercises/initialize/lib/aardvark.rb'
 
 class AardvarkTest < Minitest::Test
   def test_it_exists
