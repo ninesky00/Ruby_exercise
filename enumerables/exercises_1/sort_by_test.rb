@@ -16,28 +16,34 @@ class SortByTest < Minitest::Test
     things = ["pill", "box", "glass", "water", "sponge"]
     sorted = things.sort_by do |thing|
       # Your code goes here
+      thing[-1]
     end
     assert_equal ["sponge", "pill", "water", "glass", "box"], sorted
   end
 
   def test_sort_by_distance
-    skip
+    #skip
     distances = ["1cm", "9cm", "30cm", "4cm", "2cm"]
     # Your code goes here
+    distances.map! {|x| x.delete "cm"}
+    sorted = distances.sort {|a, b| a.to_i <=> b.to_i}
+    sorted.map! {|x| x+"cm"}
     assert_equal ["1cm", "2cm", "4cm", "9cm", "30cm"], sorted
   end
 
   def test_sort_by_length
-    skip
+    #skip
     words = ["heteromorph", "ancyloceratina", "bioengineering", "mathematical", "bug"]
     # Your code goes here
+    sorted = words.sort_by(&:length)
     assert_equal ["bug", "heteromorph", "mathematical", "ancyloceratina", "bioengineering"], sorted
   end
 
   def test_sort_by_proximity_to_ten
-    skip
+    #skip
     prices = [3.02, 9.91, 17.9, 10.01, 11.0]
     # Your code goes here
+    sorted = prices.sort_by {|x| (10-x).abs}
     assert_equal [10.01, 9.91, 11.0, 3.02, 17.9], sorted
   end
 
