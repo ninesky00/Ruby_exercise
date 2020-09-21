@@ -1,7 +1,7 @@
 gem 'minitest', '~> 5.2'
 require 'minitest/autorun'
 require 'minitest/pride'
-require_relative 'floor'
+require_relative '../lib/floor'
 
 class FloorTest < Minitest::Test
   def test_floors_are_dirty_by_default

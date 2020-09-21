@@ -1,7 +1,7 @@
 gem 'minitest', '~> 5.2'
 require 'minitest/autorun'
 require 'minitest/pride'
-require_relative 'student'
+require_relative '../lib/student'
 
 class StudentTest < Minitest::Test
   def test_grade_is_mediocre

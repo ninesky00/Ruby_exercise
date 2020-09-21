@@ -1,7 +1,7 @@
 gem 'minitest', '~> 5.2'
 require 'minitest/autorun'
 require 'minitest/pride'
-require_relative 'santa'
+require_relative '../lib/santa'
 
 class SantaTest < Minitest::Test
 

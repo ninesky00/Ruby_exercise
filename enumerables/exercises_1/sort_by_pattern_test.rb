@@ -1,4 +1,5 @@
 gem 'minitest'
+require 'pry'
 require 'minitest/autorun'
 require 'minitest/pride'
 
@@ -21,7 +22,9 @@ class SortByPatternTest < Minitest::Test
   def test_sort_alphabetically_by_last_letter
     things = ["pill", "box", "glass", "water", "sponge"]
     transformed = []
-    things.each do |thing|
+    sorted = things.each do |thing|
+      transformed << [thing[-1], thing]
+      
       # Your code goes here
     end
     transformed = transformed.sort

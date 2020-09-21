@@ -1,7 +1,7 @@
 gem 'minitest', '~> 5.2'
 require 'minitest/autorun'
 require 'minitest/pride'
-require_relative 'light'
+require_relative '../lib/light'
 
 class LightTest < Minitest::Test
   def test_light_is_off

@@ -1,7 +1,7 @@
 gem 'minitest', '~> 5.2'
 require 'minitest/autorun'
 require 'minitest/pride'
-require_relative 'drops'
+require_relative '../lib/drops'
 
 class DropsTest < Minitest::Test
   def test_no_drops

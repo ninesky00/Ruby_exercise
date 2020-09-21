@@ -28,17 +28,18 @@ class AllPatternTest < Minitest::Test
   end
 
   def test_3
-    skip
+    #skip
     words = ["love", "hate", "fire", "bird", "call"]
     all_four_letters = true
     words.each do |word|
+      word.length == 4
       # Your Code Here
     end
     assert_equal true, all_four_letters
   end
 
   def test_4
-    skip
+    #skip
     words = {
       one: "love",
       two: "hate",
@@ -48,13 +49,14 @@ class AllPatternTest < Minitest::Test
     }
     all_four_letters = true
     words.each do |position, word|
+      word.length == 4
       # Your Code Here
     end
     assert_equal true, all_four_letters
   end
 
   def test_5
-    skip
+    #skip
     statuses = [:busy, :busy, :busy]
     all_busy = true
     # Your Code Here
@@ -63,7 +65,7 @@ class AllPatternTest < Minitest::Test
   end
 
   def test_6
-    skip
+    #skip
     friend_status = {
       "Megan" => :busy,
       "Sarah" => :busy,
@@ -76,10 +78,10 @@ class AllPatternTest < Minitest::Test
   end
 
   def test_7
-    skip
+    #skip
     zip_codes = [94381, 831, 50009, 36232, 8992, 89999, 11110]
     # Your Code Here
-
+    all_five_digits = zip_codes.each {|code| code.to_s.length}
     assert_equal false, all_five_digits
   end
 

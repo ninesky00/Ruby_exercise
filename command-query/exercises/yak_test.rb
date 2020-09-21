@@ -1,7 +1,7 @@
 gem 'minitest', '~> 5.2'
 require 'minitest/autorun'
 require 'minitest/pride'
-require_relative 'yak'
+require_relative '../lib/yak'
 
 class YakTest < Minitest::Test
   def test_yak_is_hairy

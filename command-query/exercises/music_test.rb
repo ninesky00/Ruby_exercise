@@ -1,7 +1,7 @@
 gem 'minitest', '~> 5.2'
 require 'minitest/autorun'
 require 'minitest/pride'
-require_relative 'music'
+require_relative '../lib/music'
 
 class MusicTest < Minitest::Test
   def test_music_is_not_loud

@@ -44,13 +44,14 @@ class MapTest < Minitest::Test
     #skip
     numbers = [234, 10, 9119, 38881]
     # Your code goes here
-    numbers.map! {|num| num.to_s}
-      numbers.map do |num|
-      while num.length < 5
-        num.insert(0, "0")
-      end
-    end
-    assert_equal ["00234", "00010", "09119", "38881"], numbers
+    # numbers.map! {|num| num.to_s}
+    #   numbers.map do |num|
+    #   while num.length < 5
+    #     num.insert(0, "0")
+    #   end
+    # end
+    actual = numbers.map {|num| num.to_s.rjust(5, "0")}
+    assert_equal ["00234", "00010", "09119", "38881"], actual
   end
 
   def test_backwards

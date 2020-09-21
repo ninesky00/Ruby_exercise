@@ -1,8 +1,8 @@
 gem 'minitest', '~> 5.2'
 require 'minitest/autorun'
 require 'minitest/pride'
-require_relative 'product'
-require_relative 'catalogue'
+require_relative '../lib/product'
+require_relative '../lib/catalogue'
 
 class CatalogueTest < Minitest::Test
   def test_without_products

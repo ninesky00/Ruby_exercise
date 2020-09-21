@@ -1,17 +1,20 @@
 class Ghostbuster
 
   def initialize(name)
-    @nme = name
+    @name = name
   end
 
   def say_my_name
-    puts "I'm #{name}"
+    puts "I'm #{@name}"
   end
 
-  def get_car(car == "ECTO-1")
+  def get_car(car = "ECTO-1")
     @car = car
   end
 
+  def ride
+    @car
+  end
 
 end
 

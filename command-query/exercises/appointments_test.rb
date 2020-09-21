@@ -1,8 +1,8 @@
 gem 'minitest', '~> 5.2'
 require 'minitest/autorun'
 require 'minitest/pride'
-require 'time'
-require_relative 'appointments'
+require '../lib/time'
+require_relative '../lib/appointments'
 
 class AppointmentsTest < Minitest::Test
   def test_no_appointments

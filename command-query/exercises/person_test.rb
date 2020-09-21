@@ -1,7 +1,7 @@
 gem 'minitest', '~> 5.2'
 require 'minitest/autorun'
 require 'minitest/pride'
-require_relative 'person'
+require_relative '../lib/person'
 
 class PersonTest < Minitest::Test
   def test_a_person_is_zero_years_old_when_they_are_born

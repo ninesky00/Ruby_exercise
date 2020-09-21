@@ -1,8 +1,8 @@
 gem 'minitest', '~> 5.2'
 require 'minitest/autorun'
 require 'minitest/pride'
-require_relative 'cupcake'
-require_relative 'cupcakes'
+require_relative '../lib/cupcake'
+require_relative '../lib/cupcakes'
 
 class CupcakesTest < Minitest::Test
   def test_sweetest_when_no_cupcakes

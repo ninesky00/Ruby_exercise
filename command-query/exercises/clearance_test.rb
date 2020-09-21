@@ -1,8 +1,8 @@
 gem 'minitest', '~> 5.2'
 require 'minitest/autorun'
 require 'minitest/pride'
-require_relative 'clearance'
-require_relative 'item'
+require_relative '../lib/clearance'
+require_relative '../lib/item'
 
 class ClearanceTest < Minitest::Test
 

@@ -1,7 +1,7 @@
 gem 'minitest', '~> 5.2'
 require 'minitest/autorun'
 require 'minitest/pride'
-require_relative 'clock'
+require_relative '../lib/clock'
 
 class ClockTest < Minitest::Test
   def test_start_at_6

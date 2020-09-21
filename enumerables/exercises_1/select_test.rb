@@ -95,7 +95,7 @@ class SelectTest < Minitest::Test
     # skip
     elements = ["CAT", ["dog"], 23, [56, 3, 8], "AIMLESS", 43, "butter"]
     # Your code goes here
-    arrays = ["dog"], [56, 3, 8]
+    arrays = elements.select {|ele| ele.class == Array }
     assert_equal [["dog"], [56, 3, 8]], arrays
   end
 
@@ -103,7 +103,7 @@ class SelectTest < Minitest::Test
     # skip
     elements = ["cat", {:dog=>"fido"}, 23, {:stuff=>"things"}, "aimless", 43]
     # Your code goes here
-    hashes = {:dog=>"fido"}, {:stuff=>"things"}
+    hashes = elements.select {|ele| ele.class == Hash }
     assert_equal [{:dog=>"fido"}, {:stuff=>"things"}], hashes
   end
 

@@ -1,7 +1,7 @@
 gem 'minitest', '~> 5.2'
 require 'minitest/autorun'
 require 'minitest/pride'
-require_relative 'teeth'
+require_relative '../lib/teeth'
 
 class TeethTest < Minitest::Test
   def test_teeth_are_not_clean
